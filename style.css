@@ -1,0 +1,132 @@
+body{
+    padding:0;
+    margin:0;
+    font-family:sans-serif;
+}
+.first{
+    background-color:#1F2937;
+    color:white;
+    display:grid;
+    grid-template-columns:1fr 2fr 2fr 1fr;
+    grid-template-rows:1fr 2fr 1fr;
+}
+.first>.header-link{
+    display:flex;
+    justify-content:flex-end;
+}
+.header-link a{
+    text-decoration: none;
+    color:white;
+    margin:5px 0 0 20px;
+}
+.first>.company-image{
+    display:flex;
+    justify-content:flex-end;
+}
+.content>h2{
+    color:#F9FAF8;
+    margin:0;
+}
+.second>.content{
+    display:grid;
+    grid-template-columns:1fr 3fr 1fr;
+    grid-template-rows:1fr;
+}
+.content>.services{
+    display:flex;
+    gap:20px;
+}
+.services .one,.services .two,.services .three,.services .four{
+    display:flex;
+    flex-direction:column;
+    flex:1;
+}
+.services p{
+    margin-top:20px;
+    text-align:center;
+}
+.second>.content{
+    margin-top:30px;
+    margin-bottom:70px;
+}
+.second>h3{
+    margin-top:40px;
+    text-align:center;
+}
+.third{
+    background-color:#E5E7EB;
+    padding:100px 300px;
+}
+.third .content{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+}
+.third>.content>.name{
+    align-self:flex-end;
+}
+.third>.content>.testimony{
+    font-family: 'Dancing Script', cursive;
+    font-size:25px;
+}
+.fourth{
+    padding:80px 100px;
+    color:white;
+}
+.fourth>.content{
+    background-color:#3882F6;
+    padding:30px 50px;
+    border-radius: 1%;
+}
+.fourth>.content>.sign-up{
+    display:flex;
+    justify-content: space-between;
+}
+.fifth{
+    background-color:#1F2937;
+    height:70px;
+    padding:30px;
+    margin:0;
+}
+.fifth>.content>footer{
+    display:flex;
+    justify-content:center;
+}
+footer>p{
+    color:white;
+    font-size:15px;
+}
+@media(max-width:600px){
+    .content>.services{
+        display:flex;
+        align-items:center;
+        flex-direction:column;
+        gap:10px;
+    }
+    .services .one,.services .two,.services .three,.services .four{
+        display:flex;
+        flex-direction:column;
+        flex:1;
+        max-width:177px;
+    }
+    .fourth{
+        padding:30px 50px;
+    }
+    .fourth>.content{
+        padding:20px 30px;
+    }
+    .fourth>.content>.sign-up{
+        flex-direction:column;
+    }
+    .content>.sign-up>button{
+        align-self:center;
+    }
+}
+@media(max-width:850px){
+    .third{
+        padding:50px 100px;
+    }
+    .third>.content p{
+        font-size:15px;
+    }
+}
